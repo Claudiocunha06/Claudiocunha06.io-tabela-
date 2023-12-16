@@ -1,0 +1,129 @@
+<!-- Primeira cópia -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Calculator - Team 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .divider {
+            margin-top: 20px;
+            border-top: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Probability Calculator - Team 1</h2>
+
+    <label for="team1">Team 1:</label>
+    <input type="text" id="team1" placeholder="Enter Team 1">
+
+    <label for="team2">Team 2:</label>
+    <input type="text" id="team2" placeholder="Enter Team 2">
+
+    <div class="divider"></div>
+
+    <label for="oddsWin">Odds for Victory:</label>
+    <input type="number" id="oddsWin" placeholder="Enter Odds for Victory">
+
+    <label for="oddsDraw">Odds for Draw:</label>
+    <input type="number" id="oddsDraw" placeholder="Enter Odds for Draw">
+
+    <label for="oddsDefeat">Odds for Defeat:</label>
+    <input type="number" id="oddsDefeat" placeholder="Enter Odds for Defeat">
+
+    <button onclick="calculateProbability('result1')">Calculate Probability</button>
+
+    <div id="result1"></div>
+
+    <script>
+        function calculateProbability(resultId) {
+            const team1 = document.getElementById('team1').value;
+            const team2 = document.getElementById('team2').value;
+            const oddsWin = document.getElementById('oddsWin').value;
+            const oddsDraw = document.getElementById('oddsDraw').value;
+            const oddsDefeat = document.getElementById('oddsDefeat').value;
+
+            // Assuming lower odds result in higher probability
+            const probabilityWin = (1 / oddsWin) * 100;
+            const probabilityDraw = (1 / oddsDraw) * 100;
+            const probabilityDefeat = (1 / oddsDefeat) * 100;
+
+            const resultMessage = `
+                <p>${team1} winning: ${probabilityWin.toFixed(2)}%</p>
+                <p>${team2} winning: ${probabilityDefeat.toFixed(2)}%</p>
+                <p>Draw: ${probabilityDraw.toFixed(2)}%</p>
+            `;
+            
+            document.getElementById(resultId).innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>
+<div<>
+  
+
+<!-- Segunda cópia -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Calculator - Team 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 8
+          15px;
+        }
+
+        .divider {
+            margin-top: 15px;
+            text-align: center;
+            border-top: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Probability Calculator - jogo2 </h2>
+
+    <label for="team1">Team 1:</label>
+    <input type="text" id="team1" placeholder="Enter Team 1">
+
+    <label for="team2">Team 2:</label>
+    <input type="text" id="team2" placeholder="Enter Team 2">
+
+    <div class="divider"></div>
+
+    <label for="oddsWin">Odds for Victory:</label>
+    <input type="number" id="oddsWin" placeholder="ganha">
+
+    <label for="oddsDraw">Odds for Draw:</label>
+    <input type="number" id="oddsDraw" placeholder="empate">
+
+    <label for="oddsDefeat">Odds for Defeat:</label>
+    <input type="number" id="oddsDefeat" placeholder="perde">
+
+    <button onclick="calculateProbability('result2')">Calculate Probability</button>
+
+    <div id="result2"></div>
+
+    <script>
+        function calculateProbability(resultId) {
+            const team1 = document.getElementById('team1').value;
+            const team2 = document.getElementById('team2').value;
+            const oddsWin = document.getElementById('oddsWin').value;
+            const oddsDraw = document.getElementById('oddsDraw').value;
+            const oddsDefeat = document.getElementById('oddsDefeat').value;
+
+            // Assuming lower odds result in higher probability
+            const
